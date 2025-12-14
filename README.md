@@ -1,6 +1,77 @@
-................................ Project under Construction......................................
-
-
 ## SeeMyDigit- Handwritten Digit Recognition
 
-**Handwritten Digit Recognition** is a Deep Learning project designed to accurately classify handwritten digits (0–9) using Convolutional Neural Networks (CNNs). The model is trained and evaluated on the **MNIST dataset**, which contains 70,000 grayscale images of handwritten digits (60,000 for training and 10,000 for testing), each of size 28x28 pixels. The project’s main objective is to develop an intelligent system capable of recognizing and classifying digits from image data with high accuracy. The workflow involves several key stages, including **data preprocessing**, **model development**, **training and optimization**, **evaluation**, and **visualization**. During preprocessing, the images are normalized and reshaped to fit the CNN input format, and the labels are one-hot encoded. The CNN architecture typically includes multiple convolutional and pooling layers for feature extraction, followed by fully connected layers and a softmax output layer for classification. The model is implemented using **TensorFlow/Keras**, leveraging its efficient tools for deep learning model design and training. Training is performed with optimization techniques such as early stopping and dropout regularization to prevent overfitting. The system’s performance is evaluated using accuracy metrics, a confusion matrix, and loss/accuracy curves to visualize model learning and generalization. Visualization also includes displaying sample predictions and feature maps from convolutional layers to understand how the model interprets input data. The project demonstrates the effectiveness of CNNs in computer vision tasks and provides a foundation for applications in optical character recognition (OCR) and digit-based automation systems. Future improvements could include experimenting with deeper architectures (like LeNet or ResNet), applying data augmentation, or deploying the trained model using web frameworks like Flask or Streamlit. Overall, this project highlights the power of deep learning in solving pattern recognition problems and showcases a complete end-to-end pipeline from data preprocessing to model evaluation and visualization.
+**Project Overview**
+
+SeeMyDigit is a classic Deep Learning and Computer Vision project that focuses on identifying digits (0–9) from handwritten images. This project uses two different Deep Learning models trained on the MNIST dataset to analyze the effect of image resolution on model performance.
+
+I compare:
+1. A model trained on original MNIST images (28×28)
+
+2. A model trained on resized images (128×128)
+
+This comparison helps understand how image resizing impacts accuracy.
+
+**Objectives**
+
+1. Implement handwritten digit recognition using Deep Learning
+2. Compare model performance using different image sizes
+3. Analyze accuracy, loss, and training efficiency
+4. Understand the impact of higher resolution images on CNN models
+
+**Technologies Used**
+
+Programming Language: Python
+Frameworks: Pytorch
+Libraries: NumPy, Matplotlib, OpenCV and Scikit-learn etc.
+Dataset: MNIST Handwritten Digit Dataset
+
+**Dataset Description**
+
+Dataset Name: MNIST
+Total Images: 70,000
+Training: 60,000
+Testing: 10,000
+Image Size: 28 × 28 pixels
+Number of Classes: 10 (digits 0–9)
+
+**System Architecture**
+
+Step1: Input handwritten digit image
+Step2: Image preprocessing (normalization & resizing)
+Step3: Deep Learning model (CNN)
+Step4: Feature extraction using convolutional layers
+Step5: Fully connected layers
+Step6: Output digit prediction
+
+**Model Implementation**
+
+1. Model 1: Original MNIST Image Size
+   Input Size: 28 × 28
+   Preprocessing: Normalization only
+   Accuracy: ~97–98%
+
+   <img width="636" height="306" alt="image" src="https://github.com/user-attachments/assets/89eab16e-ba5b-4f4c-b3f8-f0073e13a28f" />
+
+
+3. Model 2: Resized MNIST Image
+   Input Size: 128 × 128
+   Preprocessing: Resizing + normalization
+   Accuracy: slightly improved.
+
+   <img width="653" height="530" alt="image" src="https://github.com/user-attachments/assets/8f493544-fc80-4bc3-b2a2-80fc40e0eed1" />
+
+**Training Details**
+
+Loss Function: Categorical Cross-Entropy
+Optimizer: Adam
+Activation Functions: ReLU
+Evaluation Metrics: Accuracy, Loss
+
+**Best Overall Choice: 128×128 Model**
+
+For handwritten digit recognition using the MNIST dataset, the 128×128 input model is superior in terms of Accuracy.
+
+
+
+
+
