@@ -48,6 +48,7 @@ Step6: Output digit prediction
 1. Model 1: Original MNIST Image Size
    Input Size: 28 × 28
    Preprocessing: Normalization only
+   Epochs: 6
    Accuracy: ~97–98%
 
    <img width="636" height="306" alt="image" src="https://github.com/user-attachments/assets/89eab16e-ba5b-4f4c-b3f8-f0073e13a28f" />
@@ -56,6 +57,7 @@ Step6: Output digit prediction
 3. Model 2: Resized MNIST Image
    Input Size: 128 × 128
    Preprocessing: Resizing + normalization
+   Epochs: 10
    Accuracy: slightly improved.
 
    <img width="653" height="530" alt="image" src="https://github.com/user-attachments/assets/8f493544-fc80-4bc3-b2a2-80fc40e0eed1" />
